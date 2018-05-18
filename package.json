@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "browserify": "browserify src/js/*.js > src/js/bundle.js",
-    "babel": "babel src/js/bundle.js -w -o public/js/bundle.min.js --presets=env,minify",
+    "babel": "babel src/js/bundle.js -w -o public/js/bundle.min.js --compact=false --presets=env,minify",
     "build": "npm run browserify & npm run babel",
     "watch": "npm run build  & npm start",
     "serve": "nodemon --ignore 'public' --ignore 'src/js/bundle.js' -e scss,ejs,js --exec 'npm run watch'"
@@ -30,7 +30,8 @@
     "node-sass-middleware": "^0.11.0",
     "nodemon": "^1.17.4",
     "reload": "^2.2.2",
-    "three": "^0.92.0"
+    "three": "^0.92.0",
+    "three.js-fbo": "^1.5.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
