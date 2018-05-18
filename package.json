@@ -8,8 +8,8 @@
     "browserify": "browserify src/js/*.js > src/js/bundle.js",
     "babel": "babel src/js/bundle.js -w -o public/js/bundle.min.js --presets=env,minify",
     "build": "npm run browserify & npm run babel",
-    "serve": "npm run nodemon & npm run build",
-    "nodemon": "nodemon --exec npm start -e scss,ejs,js"
+    "watch": "npm run build  & npm start",
+    "serve": "nodemon --ignore 'public' --ignore 'dev/js/bundle.js' -e scss,ejs,js --exec 'npm run watch'"
   },
   "repository": {
     "type": "git",
