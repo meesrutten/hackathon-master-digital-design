@@ -1,0 +1,22 @@
+@import './global/_normalize.css';
+:root {
+	--red: blue;
+}
+
+body {
+	display: flex;
+	height: 4rem;
+	color: var(--red);
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 9px;
+	margin-left: 20px;
+}
+
+main {
+	background: green;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 9px;
+	margin-left: 20px;
+}
