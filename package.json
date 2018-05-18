@@ -27,9 +27,13 @@
     "browserify": "^16.2.2",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "firmata": "^0.19.1",
+    "johnny-five": "^0.15.0",
     "node-sass-middleware": "^0.11.0",
     "nodemon": "^1.17.4",
     "reload": "^2.2.2",
+    "serialport": "^6.2.0",
+    "socket.io": "^2.1.1",
     "three": "^0.92.0"
   },
   "devDependencies": {
