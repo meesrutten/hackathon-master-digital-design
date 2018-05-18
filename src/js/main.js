@@ -1700,5 +1700,3 @@ function loadTremulousParticles(urls, callback) {
 		}
 	};
 }
-
->>>>>>> 835b1041d2c8da91590404c405dac07da981579d
